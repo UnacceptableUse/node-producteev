@@ -39,5 +39,16 @@ describe('user', function(){
 				done();
 			});
 		});
+
+		it('should return token and email upon succesful login', function(done){
+			producteev.api.get('/users/login', { email: email, password: password }, function(err, response) {
+				assert.equal(null, err);
+				assert.equal(email, response.login.email);
+
+				console.log('Login completed successfully, use the following token in other tests', response.login.token);
+				done();
+			});
+		});
+
 	});
 });
