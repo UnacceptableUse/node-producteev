@@ -2,7 +2,7 @@
 	"author": "Sina Karimi",
 	"name": "node-producteev",
 	"description": "Producteev API wrapper for NodeJS",
-	"version": "1.0",
+	"version": "1.0.0",
 	"homepage": "",
 	"repository": {
 		"type": "git",
